@@ -41,54 +41,6 @@ SIPATIK adalah sistem manajemen keuangan berbasis web yang dirancang khusus untu
 
 ## 🚀 Cara Menjalankan Proyek
 
-### Prerequisites
-- **Java 21** atau yang lebih baru
-- **MySQL 8.0** atau yang kompatibel
-- **Maven 3.6+**
-- **Git**
-
-### Langkah Instalasi
-
-1. **Clone Repository**
-   ```bash
-   git clone <repository-url>
-   cd sipatik
-   ```
-
-2. **Setup Database**
-   ```sql
-   CREATE DATABASE sipatik;
-   ```
-
-3. **Konfigurasi Database**
-   Edit file `src/main/resources/application.properties`:
-   ```properties
-   spring.datasource.url=jdbc:mysql://localhost:3306/sipatik?createDatabaseIfNotExist=true
-   spring.datasource.username=your_mysql_username
-   spring.datasource.password=your_mysql_password
-   ```
-
-4. **Konfigurasi Email** (untuk notifikasi)
-   Edit bagian email di `application.properties`:
-   ```properties
-   spring.mail.username=your_email@gmail.com
-   spring.mail.password=your_app_password
-   ```
-
-5. **Build dan Jalankan**
-   ```bash
-   # Build project
-   mvn clean compile
-
-   # Jalankan aplikasi
-   mvn spring-boot:run
-   ```
-
-6. **Akses Aplikasi**
-   - **URL**: http://localhost:8086
-   - **Admin Login**: http://localhost:8086/auth-adm/login
-   - **User Login**: http://localhost:8086/auth/login
-
 ### Default Admin Account
 - **Email**: ajengazzahra04@gmail.com
 - **Password**: Eks123
@@ -112,6 +64,9 @@ sipatik/
 ├── src/test/            # Unit tests
 └── pom.xml             # Maven configuration
 ```
+
+## Cara Menjalankan Projek
+1. pertama kali buka http://localhost:8085/auth/
 
 ## 🔐 Sistem Autentikasi
 
